@@ -3,4 +3,4 @@
 import numpy as np
 
 assert np.__version__ == '1.16.0'
-assert np.zeros(1)//1 == [-0]  # Test NumPy (Fixed in 1.16.2)
+print('Result: {} (Expected: [-0.] for 1.16.0)'.format(np.zeros(1) // 1)) # Test NumPy
