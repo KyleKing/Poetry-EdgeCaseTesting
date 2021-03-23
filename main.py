@@ -1,6 +1,4 @@
-import package_name
-
-import flask_compress
+from package_name import app
 
 print('Running package_name!')
-print(flask_compress.__version__)
+app.run_server(debug=True)

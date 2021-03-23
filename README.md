@@ -15,21 +15,10 @@ poetry run python main.py
 # > Running package_name!
 
 # Build with PyInstaller
+conda activate base
 poetry shell
-poetry run pyinstaller main.py --clean --noconfirm --additional-hooks-dir=hooks
+poetry run pyinstaller main.py --clean --noconfirm
 
 # Try running the output
 ./build/main/main
-# > Error that flask-compress isn't found...
-```
-
----
-
-```py
-# Modify and test with flask-compress versions
-git clone https://github.com/KyleKing/flask-compress.git
-cd flask-compress
-git checkout fix/version
-
-python setup.py bdist_wheel
 ```
