@@ -5,6 +5,7 @@ Debugging PyInstaller
 ```sh
 git clone https://github.com/KyleKing/Poetry-EdgeCaseTesting.git
 cd Poetry-EdgeCaseTesting
+git checkout dev/pyinstaller
 
 poetry install
 
@@ -14,7 +15,8 @@ poetry run python main.py
 
 # Build with PyInstaller
 poetry shell
-pyinstaller main.py --clean --noconfirm
+pyinstaller main.py --clean --noconfirm --additional-hooks-dir=hooks
+# pyinstaller main.py --clean --noconfirm
 
 # Try running the output
 ./build/main/main
@@ -37,4 +39,13 @@ Traceback (most recent call last):
   File "pkg_resources/__init__.py", line 770, in resolve
 pkg_resources.DistributionNotFound: The 'flask-compress' distribution was not found and is required by the application
 [96148] Failed to execute script main
+```
+
+```py
+# Modify and test with flask-compress versions
+git clone https://github.com/KyleKing/flask-compress.git
+cd flask-compress
+git checkout fix/version
+
+python setup.py bdist_wheel
 ```
