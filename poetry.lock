@@ -42,8 +42,8 @@ docs = ["sphinx", "pallets-sphinx-themes", "sphinxcontrib-log-cabinet", "sphinx-
 dotenv = ["python-dotenv"]
 
 [[package]]
-name = "flask-compress"
-version = "1.9.0"
+name = "Flask-Compress"
+version = "1.9.2"
 description = "Compress responses in your Flask app with gzip, deflate or brotli."
 category = "main"
 optional = false
@@ -52,6 +52,10 @@ python-versions = "*"
 [package.dependencies]
 brotli = "*"
 flask = "*"
+
+[package.source]
+type = "file"
+url = "../flask-compress/dist/Flask_Compress-1.9.2-py3-none-any.whl"
 
 [[package]]
 name = "future"
@@ -200,7 +204,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 [metadata]
 lock-version = "1.1"
 python-versions = ">3.7.1"
-content-hash = "e6a8745a72db9b170ad5c8bf595c95d3d5e69cf7f9930de31e54d3711733bb9d"
+content-hash = "2a79ae3ff6dbb651f157cdf7bf1c6c93963cc9780ce741f6512ba2d1acdd0fa5"
 
 [metadata.files]
 altgraph = [
@@ -247,8 +251,8 @@ flask = [
     {file = "Flask-1.1.2-py2.py3-none-any.whl", hash = "sha256:8a4fdd8936eba2512e9c85df320a37e694c93945b33ef33c89946a340a238557"},
     {file = "Flask-1.1.2.tar.gz", hash = "sha256:4efa1ae2d7c9865af48986de8aeb8504bf32c7f3d6fdc9353d34b21f4b127060"},
 ]
-flask-compress = [
-    {file = "Flask-Compress-1.9.0.tar.gz", hash = "sha256:d93edd8fc02ae74b73c3df10a8e7ee26dee489c65dedce0b3a1d2ce05ac3d1be"},
+Flask-Compress = [
+    {file = "Flask_Compress-1.9.2-py3-none-any.whl", hash = "sha256:3a40e794ae908bc40d5d22b77e9fd9542a76c8d2b64680df8f788621675ed2eb"},
 ]
 future = [
     {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
