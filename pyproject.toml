@@ -10,10 +10,10 @@ authors = [ "Kyle King <KyleKing@users.noreply.github.com>",]
 
 [tool.poetry.dependencies]
 python = ">3.7.1"
-# flask_compress = "1.9.0"
+flask_compress = "1.9.0"
 
-[tool.poetry.dependencies.flask_compress]
-path = "../flask-compress/dist/Flask_Compress-1.9.1-py3-none-any.whl"
+# [tool.poetry.dependencies.flask_compress]
+# path = "../flask-compress/dist/Flask_Compress-1.9.1-py3-none-any.whl"
 # git = "https://github.com/KyleKing/flask_compress.git"
 # branch = "fix/version"
 
