@@ -1,17 +1,16 @@
+[build-system]
+requires = [ "poetry-core>=1.0.0",]
+build-backend = "poetry.core.masonry.api"
+
 [tool.poetry]
-name = "poetry-edgecasetesting"
-version = "0.2.0"
-description = "Edge case testing"
+name = "package_name"
+version = "0.3.0"
+description = "Example Package"
 authors = [ "Kyle King <KyleKing@users.noreply.github.com>",]
 
 [tool.poetry.dependencies]
-python = ">3.7"
-numpy = "1.16.0"
-pywin32 = {version = "^224.0",platform = "Windows"}
-pytype = "^2019.6"
+python = ">3.7.1"
+flask_compress = "1.9.0"
 
 [tool.poetry.dev-dependencies]
-
-[build-system]
-requires = [ "poetry-core>=1.0",]
-build-backend = "poetry.core.masonry.api"
+pyinstaller = "^4.2"
