@@ -16,7 +16,7 @@ poetry run python main.py
 
 # Build with PyInstaller
 poetry shell
-pyinstaller main.py --clean --noconfirm
+poetry run pyinstaller main.py --clean --noconfirm --additional-hooks-dir=hooks
 
 # Try running the output
 ./build/main/main
