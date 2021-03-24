@@ -1,13 +1,7 @@
-import importlib.metadata
-import flask_compress
-import pkg_resources
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
-
-print(importlib.metadata.version('flask-compress'))
-print(pkg_resources.get_distribution('flask-compress').version)
 
 app = dash.Dash(__name__)
 

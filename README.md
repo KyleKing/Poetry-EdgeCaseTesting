@@ -15,10 +15,16 @@ poetry run python main.py
 # > Running package_name!
 
 # Build with PyInstaller
+# deactivate
 conda activate base
 poetry shell
-poetry run pyinstaller main.py --clean --noconfirm
+# poetry run pyinstaller main.py --clean --noconfirm
+poetry run pyinstaller main.py --clean --noconfirm --additional-hooks-dir hooks
 
 # Try running the output
-./build/main/main
+./dist/main/main
 ```
+
+> FYI: hot reload doesn't work on frozen imports!
+>
+> `app.run_server(debug=False, dev_tools_hot_reload=not getattr(sys, 'frozen', False))`
